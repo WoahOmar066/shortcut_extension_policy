@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Custom Paste Command</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #212121;
+            --bg-secondary: #171717;
+            --text-primary: #ffffff;
+            --text-secondary: #aaaaaa;
+            --accent: #4F46E5;
+            --border-color: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            display: flex;
+            justify-content: center;
+            font-weight: 300;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        section {
+            margin-bottom: 2.5rem;
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-2px);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--text-primary);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+            transition: 0.3s ease;
+        }
+        
+        .contact-button:hover {
+            filter: brightness(1.2);
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .logo-container {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .logo {
+            width: 64px;
+            height: 64px;
+            background-color: var(--accent);
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .scrollbar {
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent) var(--bg-secondary);
+        }
+        
+        .scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .scrollbar::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+        
+        .scrollbar::-webkit-scrollbar-thumb {
+            background-color: var(--accent);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="scrollbar">
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Custom Paste Command Extension</p>
+            <p class="last-updated">Last Updated: April 8, 2025</p>
+        </header>
+        
+        <section>
+            <p>This Privacy Policy outlines the data practices of the Custom Paste Command Extension (hereinafter referred to as "the Extension," "we," "our," or "us"). This document is intended to provide transparent information about how the Extension collects, uses, stores, and protects user data. By installing and using the Extension, you acknowledge that you have read and understood this Privacy Policy.</p>
+        </section>
+        
+        <section>
+            <h2>1. Data Collection and Processing</h2>
+            
+            <h3>1.1 Types of Data Collected</h3>
+            <p>The Extension collects and processes the following limited categories of data:</p>
+            <p>a) Keyboard Input Monitoring: The Extension monitors keyboard events solely for the purpose of detecting when a user-defined keyboard shortcut has been pressed. This monitoring is performed locally within the browser environment and is limited to detecting specific key combinations that users have explicitly configured as shortcuts.</p>
+            <p>b) User-Defined Shortcuts: The Extension stores keyboard shortcut combinations that users have explicitly created and configured within the Extension.</p>
+            <p>c) User-Defined Text Snippets: The Extension stores text snippets that users have explicitly associated with their keyboard shortcuts for pasting purposes.</p>
+            
+            <h3>1.2 Technical Implementation Details</h3>
+            <p>The keyboard event monitoring operates through the following mechanism:</p>
+            <p>a) When a webpage loads, the Extension injects a key listener script that monitors keyboard input events.</p>
+            <p>b) When keys are pressed, the Extension checks if the combination matches a saved shortcut.</p>
+            <p>c) If a match is found, the Extension pastes the corresponding text into the active field.</p>
+            <p>d) No keystroke data is logged, recorded, or transmitted beyond the immediate check against saved shortcuts.</p>
+            
+            <h3>1.3 Purpose Limitation</h3>
+            <p>All data collection and processing activities are strictly limited to enabling the core functionality of the Extension. Specifically, data is collected and processed solely to:</p>
+            <p>a) Facilitate the detection of user-defined keyboard shortcuts when they are pressed.</p>
+            <p>b) Enable the insertion of corresponding text snippets into active text fields when shortcuts are detected.</p>
+            <p>c) Allow users to manage (create, view, edit, or delete) their custom shortcuts and text snippets.</p>
+        </section>
+        
+        <section>
+            <h2>2. Data Storage</h2>
+            
+            <h3>2.1 Local Storage</h3>
+            <p>All data collected by the Extension is stored exclusively in the user's browser using Chrome's local storage API. Key aspects of this storage approach include:</p>
+            <p>a) Device Limitation: Data is stored only on the user's device and is not synchronized across devices or browsers.</p>
+            <p>b) No Remote Storage: No user data is transmitted to or stored on any remote servers, including servers operated by us or by third parties.</p>
+            <p>c) Browser Control: The data stored by the Extension is subject to the security controls and limitations imposed by the Chrome browser and its local storage implementation.</p>
+            
+            <h3>2.2 Data Retention and Deletion</h3>
+            <p>a) Duration of Storage: Data is retained in local storage for as long as the Extension remains installed or until the user manually deletes specific shortcuts.</p>
+            <p>b) User Control: Users have complete control over their data and can delete individual shortcuts or all data at any time through the Extension's interface.</p>
+            <p>c) Uninstallation: When the Extension is uninstalled, all associated data in the browser's local storage is permanently removed.</p>
+        </section>
+        
+        <section>
+            <h2>3. Data Sharing and Transmission</h2>
+            
+            <h3>3.1 No Data Transmission</h3>
+            <p>The Extension does not transmit any user data outside of the user's browser. Specifically:</p>
+            <p>a) No Internet Communication: The Extension does not send any collected data over the internet to any servers or third parties.</p>
+            <p>b) No Analytics: The Extension does not implement any form of analytics or telemetry that would transmit usage data.</p>
+            <p>c) No API Calls: The Extension does not make API calls to external services that would involve sharing user data.</p>
+            
+            <h3>3.2 Third-Party Access</h3>
+            <p>a) No Third-Party Sharing: We do not share, sell, rent, trade, or otherwise disclose any user data to third parties, as we do not have access to or possession of such data in the first place.</p>
+            <p>b) No Third-Party Services: The Extension does not integrate with or utilize any third-party services that would have access to user data.</p>
+            <p>c) No Advertising: The Extension does not serve advertisements and does not share any information with advertising networks.</p>
+            
+            <h3>3.3 Legal Disclosure</h3>
+            <p>As we do not collect or store any user data on our servers, we do not possess any user data that could be disclosed in response to legal requests such as subpoenas, court orders, or other legal processes.</p>
+        </section>
+        
+        <section>
+            <h2>4. Data Security</h2>
+            
+            <h3>4.1 Technical Security Measures</h3>
+            <p>The Extension implements appropriate technical measures to ensure the security of user data:</p>
+            <p>a) Local Processing: All data processing occurs locally within the user's browser, minimizing exposure to external threats.</p>
+            <p>b) Chrome API Security: The Extension relies on Chrome's built-in security mechanisms for local storage, which include isolation between different extensions and websites.</p>
+            <p>c) Minimal Permissions: The Extension requests only those permissions that are strictly necessary for its functionality, as detailed in the permission justifications section.</p>
+            
+            <h3>4.2 Data Access Controls</h3>
+            <p>a) User Control: Only the user has access to their saved shortcuts and text snippets through the Extension's interface.</p>
+            <p>b) Developer Non-Access: As developers, we have no means to access individual users' data since it is stored exclusively on users' devices.</p>
+        </section>
+        
+        <section>
+            <h2>5. User Rights and Controls</h2>
+            
+            <h3>5.1 Access and Control</h3>
+            <p>Users have comprehensive rights regarding their data, including:</p>
+            <p>a) Transparency: Users can view all shortcuts and text snippets they have created through the Extension's popup interface at any time.</p>
+            <p>b) Modification: Users can edit or update their shortcuts and text snippets through the Extension's interface.</p>
+            <p>c) Deletion: Users can delete individual shortcuts or all data by using the Extension's interface or by uninstalling the Extension.</p>
+            <p>d) Installation Control: Users can choose to uninstall the Extension at any time, which will remove all associated data.</p>
+            
+            <h3>5.2 User Consent</h3>
+            <p>The Extension operates on the basis of explicit user consent, as evidenced by:</p>
+            <p>a) Voluntary Installation: Users must actively choose to install the Extension.</p>
+            <p>b) Permission Approval: Users must approve the requested permissions during installation.</p>
+            <p>c) Explicit Configuration: Users must manually create and configure any shortcuts and text snippets.</p>
+        </section>
+        
+        <section>
+            <h2>6. Children's Privacy</h2>
+            <p>The Extension is not directed at children under the age of 13 and does not knowingly collect personal information from children. The functionality of the Extension is general-purpose and not specifically designed for or targeted towards children.</p>
+        </section>
+        
+        <section>
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We reserve the right to update or modify this Privacy Policy at any time. When we make changes, we will:</p>
+            <p>a) Update the policy text in the Chrome Web Store listing</p>
+            <p>b) Update the version information for the Extension</p>
+            <p>c) Include a note about the change in the Extension's update notes</p>
+            <p>Users are encouraged to review this Privacy Policy periodically to stay informed about our data practices. Continued use of the Extension after any modifications to the Privacy Policy constitutes acceptance of those changes.</p>
+        </section>
+        
+        <section>
+            <h2>8. Permissions Justification</h2>
+            <p>The Extension requires several permissions to function properly. Here is a detailed explanation of each permission and its necessity:</p>
+            <p>a) clipboardWrite: Required to insert custom text into text fields when shortcuts are activated. Without this permission, the Extension would be unable to paste the user's custom text snippets.</p>
+            <p>b) activeTab: Necessary to access the current tab when a shortcut is pressed, allowing the Extension to identify where to insert text and ensuring text is only pasted into the active text field or editor.</p>
+            <p>c) storage: Essential for saving custom keyboard shortcuts and their corresponding text snippets to Chrome's local storage, ensuring shortcuts persist between browser sessions.</p>
+            <p>d) scripting: Required to inject the key listener script into web pages, enabling the Extension to detect when custom shortcuts are pressed while browsing.</p>
+            <p>e) Host Permission ("<all_urls>"): Necessary for the Extension to detect and respond to keyboard shortcuts on any website. This broad access is required for the Extension to function across the entire web rather than on a limited set of sites.</p>
+        </section>
+        
+        <section>
+            <h2>9. Contact Information</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the data practices of the Extension, please contact the creator at m.omar.a.siddiqui@gmail.com</p>
+        </section>
+    </div>
+</body>
+</html>
